@@ -1,0 +1,11 @@
+{
+  "build": {
+    "builder": "MAVEN",
+    "buildCommand": "./mvnw clean package -DskipTests",
+    "outputDirectory": "target"
+  },
+  "deploy": {
+    "startCommand": "java -jar target/*.jar",
+    "port": 8080
+  }
+}
